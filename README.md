@@ -15,6 +15,6 @@ Clona la repository ed esegui lo script di installazione:
 
 ```bash
 git clone https://github.com/GiuseppeSiragusa/Carto-Shaper-Monitor.git
-cd carto-shaper-monitor
+cd Carto-Shaper-Monitor
 chmod +x install.sh
 ./install.sh
