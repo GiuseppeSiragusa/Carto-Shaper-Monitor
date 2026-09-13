@@ -1,0 +1,13 @@
+[Unit]
+Description=Carto Shaper Monitor Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/Carto-Shaper-Monitor
+ExecStart=/home/pi/Carto-Shaper-Monitor/venv/bin/python /home/pi/Carto-Shaper-Monitor/carto_shaper_monitor.py
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
