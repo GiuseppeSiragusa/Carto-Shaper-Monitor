@@ -14,7 +14,7 @@ Monitoraggio adattivo dell'Input Shaper tramite l'accelerometro integrato nel Ca
 Clona la repository ed esegui lo script di installazione:
 
 ```bash
-git clone https://github.com/tuo-utente/carto-shaper-monitor.git
+git clone https://github.com/GiuseppeSiragusa/Carto-Shaper-Monitor.git
 cd carto-shaper-monitor
 chmod +x install.sh
 ./install.sh
