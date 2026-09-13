@@ -1,17 +1,18 @@
-# Carto-Shaper Monitor
+# Carto-Shaper Monitor (Printer.cfg Mode)
 
-Monitor per l’Input Shaper del Cartographer, progettato per Raspberry Pi con systemd.
+Questo monitor legge i valori dello shaper direttamente dal file `printer.cfg`,
+compatibile con tutte le versioni moderne di Klipper e Moonraker.
 
-## 🚀 Funzionalità
-- Monitoraggio continuo del file `input_shaper.json`
-- Logging automatico
-- Servizio systemd stabile e persistente
-- Installazione automatica tramite `install.sh`
+## File inclusi
 
-## 📦 Installazione
+- `input_shaper_parser.py` → parser del printer.cfg
+- `monitor.py` → monitor che aggiorna la UI
+- `carto-shaper.service` → servizio systemd
+
+## Installazione
 
 ```bash
-git clone https://github.com/GiuseppeSiragusa/Carto-Shaper-Monitor
-cd Carto-Shaper-Monitor
-chmod +x install.sh
-./install.sh
+sudo cp carto-shaper.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable carto-shaper.service
+sudo systemctl start carto-shaper.service
