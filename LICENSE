@@ -1,6 +1,16 @@
+
+---
+
+### 3. File: `LICENSE`
+
+**Posizione**: Nella root del progetto (stessa cartella di `install.sh`)
+**Nome esatto**: `LICENSE`
+
+**Contenuto da incollare** (sostituisci `[anno]` e `[tuo nome]` con i tuoi dati):
+```text
 MIT License
 
-Copyright (c) 2026 GiuseppeSiragusa
+Copyright (c) [anno] [tuo nome]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,0 +1,14 @@
+[Unit]
+Description=Cartographer Input Shaper Monitor
+After=network.target moonraker.service
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi
+ExecStart=/usr/bin/python3 /home/pi/carto_shaper_monitor.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target questo invece?
